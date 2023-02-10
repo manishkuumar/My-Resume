@@ -1,0 +1,292 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Manish Kumar} % Your Name
+\newcommand{\course}{Bachelor of Technology} % Your Program
+\newcommand{\roll}{BT21CE023} % Your Roll No.
+\newcommand{\phone}{} % Your Phone Number
+\newcommand{\emaila}{manish.kumaaar14@gmail.com} %Email 1
+\newcommand{\emailb}{bt21ce023@nitmz.ac.in} %Email 2
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{2.35cm}{%
+\includegraphics[width=2cm,clip]{nitmz_logo.jpeg}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-8292611966\phone}\\
+  {Roll No.: \roll} & \href{mailto:manish.kumaaar14@gmail.com}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  \course &  \href{mailto:bt21ce023@nitmz.ac.in}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emailb}}\\
+  {Civil Engineering} &  \href{https://github.com/manishkuumar}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\
+  {National Institute Of Technology, Mizoram} & \href{https://www.linkedin.com/in/manish-kumar-jha-6b9657228/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+\end{tabularx}
+}
+% \parbox{3.0cm}{%
+% \flushright \includegraphics[width=2cm,clip]{nitmz_logo.jpeg}
+% }
+
+
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NIT, Mizoram}{CGPA: 7.83 }
+      {B.Tech , Civil Engineering}{2025}
+    \resumeSubheading
+      {Lawrence and Mayo Public School ,Kota ,Rajasthan}{Percentage: 94.6}
+      {CBSE , Class XII}{2021}
+    \resumeSubheading
+      {Ishan International Public School,Patna,Bihar}{Percentage: 95.2}
+      {CBSE, Class X}{2019}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Google Cloud }
+      {2023}{Practioner and Facilator}
+     
+      \resumeItemListStart
+    \item {Worked in Google Cloud Fundamentals : Core Infrastructure}
+    \item {Worked in Kubernetes Engine , Cloud SQL and Google API}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+    
+    
+
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {My Personal Portfolio} %Project Name
+      {Individual Project for my personal website} %Project Name, Location Name
+      {2023} %Event Dates
+
+      \resumeItemListStart
+        \item {Tech Stack: JavaScript | HTML | CSS | ReactJS}
+        \item {I have used all my experience of Web Development in this project}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+    \resumeProject
+      {Password Generator GUI Application} %Project Name
+      {Individual Project} %Project Name, Location Name
+      {2023} %Event Dates
+
+      \resumeItemListStart
+        \item {Tech Stack: Python | Tkinter | paperclip | random }
+        \item {Strong Passwords can be generated for us using this GUI application }
+        \item{This application won't require any sort of internet because it's a GUI programme}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+     \resumeProject
+      {ATM Mini-Project} %Project Name
+      {A mini Project of ATM functionalities} %Project Name, Location Name
+      {2023} %Event Dates
+
+      \resumeItemListStart
+        \item {Tech Stack: C++ | OOPs}
+        \item {Users can check account balance, Cash Withdrawl, User Details }
+        \item {I have used my experience of OOPs concept in this project}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{ : Python | C++ | HTML | CSS | JavaScript | C } \\
+     \textbf{Developer Tools}{ : GitHub | Visual Studio Code | CodePen } \\
+     \textbf{Frameworks}{ : NodeJS | React | BootStrap | jQuery } \\
+     \textbf{Databases}{ : Cloud SQL by Google | MySQL | AWS  } \\
+     \textbf{Soft Skills}{ : Communication | TeamWork | Research | Critical thinking } \\
+     \textbf{Areas of Interest}{ : AI | Machine Learning | Cloud Computing } \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Organizing Committe, } % Position
+    {UnStop D2C Club} %Club,Event
+    {Jan'22 - July'22} %Tenure Period
+
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Topper } % Award
+    { ,Class X Topper of School} % Event
+    {2019} %Event Year
+    
+\resumePOR{Bamboo Training } % Award
+    { , 3 Days Bamboo Traing in Forest Reseach Centre , Mizoram } % Event
+    {24.01.23 - 26.01.23} %Event Year
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+%-------------------------------------------
+\end{document}
